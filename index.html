@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete calculator | abdul hannan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>
+        a complete calculator | abdul hannan
+    </h1>
+    <main id="calc-body">
+        <section id="display">
+            <input type="text" id="input" readonly placeholder="000">
+        </section>
+        <section id="body">
+            <div class="row">
+                <button type="button"  onclick="clearDisplay()" class="btns operators">AC</button>
+                <button type="button" onclick="displayValue('%')" class="btns operators">%</button>
+                <button type="button" onclick="displayValue('-') "class="btns operators">&minus;</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="displayValue('7')" class=" btns">7</button>
+                <button type="button" onclick="displayValue('8')" class=" btns">8</button>
+                <button type="button" onclick="displayValue('9')" class=" btns">9</button>
+                <button type="button" onclick="displayValue('*')" class=" btns operators" >&times;</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="displayValue('4')" class=" btns">4</button>
+                <button type="button" onclick="displayValue('5')" class=" btns">5</button>
+                <button type="button" onclick="displayValue('6')" class=" btns">6</button>
+                <button type="button" onclick="displayValue('/')" class=" operators btns" >&divide;</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="displayValue('1')" class=" btns">1</button>
+                <button type="button" onclick="displayValue('2')" class=" btns">2</button>
+                <button type="button" onclick="displayValue('3')" class=" btns">3</button>
+                <button type="button" onclick="displayValue('+')" class=" operators btns" >&plus;</button>
+            </div>
+            <div class="row">
+                <button type="button" onclick="displayValue('00')" class=" btns ">00</button>
+                <button type="button" onclick="displayValue('0')" class=" btns">0</button>
+                <button type="button" onclick="displayValue('.')" class=" btns">.</button>
+                <button type="button" class="btns operators" id="calculate" onclick="calculation()">=</button>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
